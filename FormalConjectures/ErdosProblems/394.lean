@@ -108,8 +108,8 @@ Since $t_2(p)=p-1$ for prime $p$ it is trivial that $\sum_{n\leq x}t_2(n)\gg \fr
 -/
 @[category research solved, AMS 11]
 theorem erdos_394.variants.lower_bound :
-    (fun x ↦ x ^ 2 / Real.log x) ≫
-    (fun x ↦ ∑ n ∈ Icc 1 ⌊x⌋₊, (t 2 n : ℝ)) := by
+    (fun x ↦ ∑ n ∈ Icc 1 ⌊x⌋₊, (t 2 n : ℝ)) ≫
+    (fun x ↦ x ^ 2 / Real.log x) := by
   sorry
 
 /--
